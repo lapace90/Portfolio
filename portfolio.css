@@ -1,0 +1,315 @@
+body {
+  font-family:'Courier New', Courier, monospace;
+  background-image: url(./img/C2C2C2.png);
+  text-align: center;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  width: 100%;
+  background-color:rgb(194, 194, 194);
+  top: 0;
+  height: 4rem;
+}
+
+#logo {
+  height: 5rem;
+  border-radius: 20%;
+  border: 2px solid gray;
+  margin: 7px;
+  box-shadow: 3px 3px 3px rgb(211, 77, 0);
+}
+
+nav li {
+  display: inline;
+  font-weight:bold;
+  padding: 1.2rem;
+  font-size:1.3rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Unbounded';
+  text-shadow: 2px 2px 3px black;
+  color: white;
+}
+
+main {
+  position: relative;
+  margin-top: 7rem;
+}
+
+ #aboutme {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 85%;
+}
+
+ h1 {
+  display: flex;
+  font-size: 3rem;
+  font-family: 'Unbounded';
+  text-shadow: 2px 2px 3px rgb(211, 77, 0);
+  color: white;
+  margin: 3rem auto;
+}
+
+#propic {
+  display: flex;
+  width: 11rem;
+  border-radius: 10px;
+  display: flex;
+  align-self: center;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  margin: auto;
+}
+
+.me {
+  padding: 3rem;
+  margin-left: 7rem;
+  display: block;
+}
+
+.bio {
+  display: block;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family:'Red Hat Mono';
+  width: 50%;
+}
+
+.cv {
+  background-color: whitesmoke;
+  margin: 5rem auto;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  width: 11rem;
+  border-radius: 4px;
+  
+}
+
+.cv h3 {
+  font-family: 'Unbounded';
+  padding: 4px;
+  margin: 1.1rem auto;
+}
+
+.cv a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(211, 77, 0);
+  border-radius: 8px;
+  box-shadow: 3px 3px 4px white;
+  padding: .8rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Unbounded';
+  text-shadow: 2px 2px 3px white;
+}
+
+p {
+  font-family: 'Red Hat Mono';
+}
+
+/*skills*/
+#skills {
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  padding: 2rem;
+  margin: 10rem auto;
+  display: inline-flexbox;
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+.devicon {
+  background-color: white;
+  width: auto;
+  margin: auto;
+  padding: 1.2rem;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+}
+
+i {
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+/*projects*/
+#projects {
+  display: flexbox;
+  font-size: 1.5rem;
+}
+#projects h2 {
+  padding: 3rem;
+}
+
+.demo img {
+  width: 25%;
+  display: inline-flex;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  border-radius: 8px;
+}
+
+/*contacts*/
+#contacts {
+  margin-top: 15rem;
+}
+
+.message {
+  box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+  background: #fff;
+  padding: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+  width: 25%;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  color: #333;
+  padding: .7rem;
+  width: 95%;
+  border: 1px solid #ebebeb;
+  font-size: 1rem;
+  letter-spacing: 0;
+  background: #f0f0f0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+label {
+  color: #666;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: block;
+  text-align: left;
+  padding-top: .5rem;
+}
+
+.submit {
+  color: white;
+  background-color: rgb(211, 77, 0);
+  border-radius: 8px;
+  margin-top: 2rem;
+  padding: .8rem;
+  font-weight: bold;
+  border: none;
+}
+
+#contacts {
+  font-size: 1.5rem;
+}
+
+.social {
+  display: inline-block;
+  background-color: whitesmoke;
+  width: 15%;
+  margin: auto;
+  box-shadow: 5px 5px 5px rgb(211, 77, 0);
+  border-radius: 4px;
+}
+
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+  
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+.fa-instagram {
+  color: #125688;
+}
+
+.fa-skype {
+  color: #00aff0;
+}
+
+footer {
+  border-top: 1px solid #444;
+  margin-top: 5rem; 
+  width: 100%;
+  text-align: left;
+  font-size: small;
+  }
+
+
+
+
+  
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(211, 77, 0);
+  color: white;
+  padding: .5rem;
+  font-size: .9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 

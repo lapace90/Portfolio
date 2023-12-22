@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&family=Red+Hat+Mono:wght@400;700&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../portfolio.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <title>Il_Pa Developper</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img id="logo" alt="il_pa logo" src="../img/New Project2.jpg">
+                <ul>
+                    <li><a href="#aboutme">Chi sono</a></li>
+                    <li><a href="#skills">Competenze</a></li>
+                    <li><a href="#projects">Progetti</a></li>
+                    <li><a href="#contacts">Contatti</a></li>
+                </ul>
+            </nav>
+        </header>
+         
+        <main>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Lingua</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="../portfolio.html">English</a>
+                  <a href="./fr_portfolio.html">Français</a>
+                  <a href="#">Italiano</a>
+                </div>
+            </div> 
+
+            <section id="aboutme">
+                <div class="me">
+                    <h1>Ciao,<br> sono Ilaria!</h1>
+                    <img id="propic" alt="Ilaria Pace" src="../img/propic.jpg">
+                    <div class="cv">
+                        <h3>Curriculum</h3>
+                        <a href="../img/Ilaria PaceCV_school.pdf" download="resumeIlaria">Scarica</a>
+                    </div>
+                </div>
+                <div class="bio">
+                    <h2>Chi sono:</h2>
+                    <p>Ciao, sono Ilaria Pace, vivo in Costa Azzurra e sono una programmatrice che ama il suo lavoro, con un profondo interesse nel 
+                        creare siti web con un design accattivante e di facile utilizzo per gli utenti.
+                        Mi impegno per creare esperienze web interattive e adattabili ad ogni dispositivo. <br>Mi piace lavorare in un ambiente collaborativo, 
+                        sfruttando le mie capacità di problem-solving per apportare soluzioni efficienti e ottimali.<br> Rimanendo costantemente aggiornata sugli ultimi trands 
+                        del mercato, mi dedico ogni giorno ad affinare le mie competenze ed espandere la mie conoscenze.
+                    </p>
+                    <p><strong>Collaboriamo per dare vita alle tue soluzioni digitali!</strong></p>
+                </div>
+            </section>
+            
+            
+            <section id="skills">
+                <h2>Competenze</h2>
+                <p>Le mie conoscenze sui linguaggi digitali sono in continua evoluzione</p>
+                <p>Ho esperinza con questo tipo di tecnologie:</p>
+                <div class="devicon">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <i class="devicon-github-original-wordmark colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-canva-original"></i>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Progetti</h2>
+                <div class="demo">
+                    <img src="../img/pulse.png" alt="music club's site">
+                    <img src="../img/tonight.png" alt="sito che ti dice cosa potresti fare la sera">
+                    <img src="../img/bolt.png" alt="sito di negozio di bricolage">
+                </div>
+            </section>
+
+            <section id="contacts">
+                <h2>Contatti</h2>
+                <p>Per ogni domanda o richiesta di collaborazione non esitare a scrivermi un messaggio...</p>
+                <form class="message">
+                    <label id="name">Nome</label>
+                    <input type="text" name="name" required>
+                    <br>
+                    <label id="email">Email</label>
+                    <input type="email" name="email" required>
+                    <br>
+                    <label>Messaggio</label>
+                    <textarea minlength="5" maxlength="250" rows="7" cols="35" required></textarea>
+                    <br>
+                    <button type="submit" class="submit">Submit Your Message</button>
+                </form>
+                <p>...oppure contattami sui social!</p>
+                <div class="social">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-skype"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <p>Copyright 2023. Made by Il_Pa</p>
+        </footer>
+    </body>
+    <link href="../portfolio.js">
+</html>
