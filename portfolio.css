@@ -1,16 +1,14 @@
 body {
   font-family:'Courier New', Courier, monospace;
-  background-image: url(./img/C2C2C2.png);
+  background: linear-gradient(to right, rgb(139, 139, 141), rgb(253, 253, 253));
   text-align: center;
 }
 
-nav a:hover {
+#navi a:hover {
   opacity: 0.7;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
+#navi {
   position: fixed;
   z-index: 2;
   box-shadow: 5px 5px 5px rgb(211, 77, 0);
@@ -18,6 +16,12 @@ nav {
   background-color:rgb(194, 194, 194);
   top: 0;
   height: 4rem;
+}
+
+#btn {
+  border-radius: 20%;
+  border: 2px solid gray;
+  box-shadow: 3px 3px 3px rgb(211, 77, 0);
 }
 
 #logo {
@@ -28,16 +32,13 @@ nav {
   box-shadow: 3px 3px 3px rgb(211, 77, 0);
 }
 
-nav li {
-  display: inline;
+#navi li {
   font-weight:bold;
   padding: 1.2rem;
   font-size:1.3rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
+#navi a {
   font-family: 'Unbounded';
   text-shadow: 2px 2px 3px black;
   color: white;
@@ -45,49 +46,35 @@ nav a {
 
 main {
   position: relative;
-  margin-top: 7rem;
 }
 
- #aboutme {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 85%;
-}
 
- h1 {
-  display: flex;
-  font-size: 3rem;
+ #hello {
+  font-size: 6rem;
+  padding: 3.5rem;
   font-family: 'Unbounded';
   text-shadow: 2px 2px 3px rgb(211, 77, 0);
   color: white;
-  margin: 3rem auto;
 }
 
 #propic {
-  display: flex;
   width: 11rem;
   border-radius: 10px;
-  display: flex;
   align-self: center;
   box-shadow: 5px 5px 5px rgb(211, 77, 0);
-  margin: auto;
+  margin: 4rem auto;
 }
 
 .me {
   padding: 3rem;
-  margin-left: 7rem;
   display: block;
 }
 
 .bio {
-  display: block;
-  box-shadow: 5px 5px 5px rgb(211, 77, 0);
   margin: auto;
   font-size: 1.5rem;
   padding: 1rem;
   font-family:'Red Hat Mono';
-  width: 50%;
 }
 
 .cv {
@@ -126,7 +113,6 @@ p {
 
 /*skills*/
 #skills {
-  box-shadow: 5px 5px 5px rgb(211, 77, 0);
   padding: 2rem;
   margin: 10rem auto;
   display: inline-flexbox;
@@ -148,6 +134,7 @@ i {
   padding: 1rem;
 }
 
+
 /*projects*/
 #projects {
   display: flexbox;
@@ -156,6 +143,7 @@ i {
 #projects h2 {
   padding: 3rem;
 }
+
 
 .demo img {
   width: 25%;
@@ -175,7 +163,7 @@ i {
   padding: 3rem;
   margin-top: 3rem;
   text-align: center;
-  width: 25%;
+  width: 35%;
   box-shadow: 5px 5px 5px rgb(211, 77, 0);
   border-radius: 8px;
   margin: 0 auto;
@@ -220,7 +208,7 @@ label {
 .social {
   display: inline-block;
   background-color: whitesmoke;
-  width: 15%;
+  padding: 5px;
   margin: auto;
   box-shadow: 5px 5px 5px rgb(211, 77, 0);
   border-radius: 4px;
@@ -228,7 +216,7 @@ label {
 
 .fab {
   padding: 10px;
-  font-size: 30px;
+  font-size: 2.5rem;
   width: 20px;
   text-align: center;
   text-decoration: none;
@@ -271,7 +259,55 @@ footer {
 background-color: rgb(211, 77, 0);
 padding: .4rem;
 border-radius: 4px;
+font-family: Unbounded;
 border: #f0f0f0;
 color: white;
+
 }
 
+@media screen and (max-width: 750px)  {
+  #hello {
+    font-size: 4rem;
+    font-family: 'Unbounded';
+    text-shadow: 2px 2px 3px rgb(211, 77, 0);
+    color: white;
+    
+  }
+  .fox {
+    min-width: 22rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  #skills {
+    padding: 2rem;
+    margin: 2rem auto;
+    display: inline-flexbox;
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  
+  .devicon {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgb(211, 77, 0);
+  }
+  
+  i {
+    font-size: 3rem;
+    padding: 0.8;
+  }
+
+  .message {
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    background: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 90%;
+    box-shadow: 2px 2px 2px rgb(211, 77, 0);
+    border-radius: 8px;
+    margin:auto;
+  }
+}

@@ -1,114 +1,185 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&family=Red+Hat+Mono:wght@400;700&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./portfolio.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-        <title>Il_Pa Developer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <img id="logo" alt="il_pa logo" src="./img/New Project2.jpg">
-                <ul>
-                    <li><a href="#aboutme">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="lang">
-                <label for="lang"></label>
-                <select name="lang" id="lang">
-                  <option value="eng"><a href="./portfolio.html">English</a></option>
-                  <option value="ita"><a href="./trad_portfolio.html/ita_portfolio.html">Italiano</a></option>
-                  <option value="fra"><a href="./trad_portfolio.html/fr_portfolio.html">Français</a></option>
-                </select>
-              </section>
-              
-            <section id="aboutme">
-                <div class="me">
-                    <h1>Hi,<br> I'm Ilaria!</h1>
-                    <img id="propic" alt="Ilaria Pace" src="./img/propic.jpg">
-                    <div class="cv">
-                        <h3>Resume</h3>
-                        <a href="./img/Ilaria PaceCV_school.pdf" download="resumeIlaria">Download</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Il_Pa Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&family=Red+Hat+Mono:wght@400;700&family=Unbounded:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navi" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/New Project2.jpg" alt="il_pa logo" id="logo">
+                </a>
+                <button id="btn" class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="lang mt-5 p-5">
+            <label for="lang"></label>
+            <select name="lang" id="lang">
+                <option value="eng"><a href="./portfolio.html">English</a></option>
+                <option value="ita"><a href="./trad_portfolio.html/ita_portfolio.html">Italiano</a></option>
+                <option value="fra"><a href="./trad_portfolio.html/fr_portfolio.html">Français</a></option>
+            </select>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="mt-5 pb-5">
+                    <div class="col-md-6">
+                        <h1 id="hello" class="text-start mt-5">Hi,<br> I'm Ilaria!</h1>
+                        <div class="col-md ">
+                            <img src="./img/codingfox.png" alt="coding fox" class="img-fluid fox">
+                        </div>
                     </div>
                 </div>
-                <div class="bio">
-                    <h2>About me:</h2>
-                    <p>Hello, I'm Ilaria Pace, a passionate web developer based in French Riviera, with a deep interest in 
-                        creating user-friendly and visually appealing websites.
-                        I strive to create interactive and responsive web experiences. <br>I enjoy working in collaborative environments, 
-                        leveraging my problem-solving skills to deliver efficient solutions.<br> Constantly staying up-to-date with the latest 
-                        industry trends, I am dedicated to honing my skills and expanding my knowledge.
-                    </p>
-                    <p><strong>Let's collaborate and bring your digital solutions to life!</strong></p>
+                <hr>
+                <div class="row">
+                    <div id="aboutme" class="col-md-6 align-self-center">
+                        <div class="bio m-4">
+                            <h2 class="p-5">About me:</h2>
+                            <p id="siteContent">Hello, I'm Ilaria Pace, a passionate web developer based in French
+                                Riviera,
+                                with a
+                                deep interest in creating user-friendly and visually appealing websites.
+                                I strive to create interactive and responsive web experiences. <br>I enjoy working in
+                                collaborative
+                                environments, leveraging my problem-solving skills to deliver efficient solutions.<br>
+                                Constantly
+                                staying up-to-date with the latest industry trends, I am dedicated to honing my skills
+                                and expanding
+                                my knowledge.
+                            </p>
+                            <span><strong>Let's collaborate and bring your digital solutions to life!</strong></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <img id="propic" alt="Ilaria Pace" src="./img/propic.jpg" class="img-fluid mt-5">
+                        <div class="cv text-center">
+                            <h3>Resume</h3>
+                            <a href="./img/CV stage.pdf" download="resumeIlaria">Download</a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            
-            
-            <section id="skills">
-                <h2>Skills</h2>
-                <p>My Programming Language Skills Are Always Growing</p>
-                <p>I have experience with these technologies:</p>
-                <div class="devicon">
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <i class="devicon-github-original-wordmark colored"></i>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-canva-original"></i>
+            </div>
+            <hr>
+        </section>
+        <section id="skills" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="p-5">Skills</h2>
+                    <p>My Programming Language Skills Are Always Growing</p>
+                    <p class="pb-3">I have experience with these technologies:</p>
+                    <div class="devicon">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                        <i class="devicon-github-original-wordmark colored"></i>
+                        <i class="devicon-vuejs-plain colored"></i>
+                        <i class="devicon-symfony-original colored"></i>
+                        <i class="devicon-php-plain colored"></i>
+                        <i class="devicon-laravel-original colored"></i>
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicon-canva-original"></i>
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <i class="devicon-androidstudio-plain-wordmark colored"></i>
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <i class="devicon-figma-plain colored"></i>
+                        <i class="devicon-wordpress-plain colored"></i>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <section id="projects" class="container-fluid">
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h2 class="p-5">Projects</h2>
+                    <div class="demo">
+                        <img src="./img/pulse.png" alt="music club's site">
+                        <img src="./img/tonight.png" alt="site for tell you what to do in the evening">
+                        <img src="./img/bolt.png" alt="DIY shop's site">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2>Contacts</h2>
+                    <p class="p-5">For any question or request of collaboration feel free to send me a message...</p>
+                    <form class="message">
+                        <label id="name">Name</label>
+                        <input type="text" name="name" required>
+                        <br>
+                        <label id="email">Email</label>
+                        <input type="email" name="email" required>
+                        <br>
+                        <label>Message</label>
+                        <textarea minlength="5" maxlength="250" rows="7" cols="35" required></textarea>
+                        <br>
+                        <button type="submit" class="submit">Submit Your Message</button>
+                    </form>
+                    <p class="p-5">...or contact me on my social medias!</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/superlila90/" class="fab fa-facebook p-3"></a>
+                        <a href="www.linkedin.com/in/ilaria-pace-2a3b3b2aa" class="fab fa-linkedin p-3"></a>
+                        <a href="https://www.instagram.com/superlila90/" class="fab fa-instagram p-3"></a>
+                        <a href="https://github.com/lapace90" class="fab fa-github p-3"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p class="text-center">Copyright 2023. Made by Il_Pa</p>
+            </div>
+        </div>
+    </footer>
+</body>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="demo">
-                    <img src="./img/pulse.png" alt="music club's site">
-                    <img src="./img/tonight.png" alt="site for tell you what to do in the evening">
-                    <img src="./img/bolt.png" alt="DIY shop's site">
-                </div>
-            </section>
-
-            <section id="contacts">
-                <h2>Contacts</h2>
-                <p>For any question or request of collaboration feel free to send me a message...</p>
-                <form class="message">
-                    <label id="name">Name</label>
-                    <input type="text" name="name" required>
-                    <br>
-                    <label id="email">Email</label>
-                    <input type="email" name="email" required>
-                    <br>
-                    <label>Message</label>
-                    <textarea minlength="5" maxlength="250" rows="7" cols="35" required></textarea>
-                    <br>
-                    <button type="submit" class="submit">Submit Your Message</button>
-                </form>
-                <p>...or contact me on my social medias!</p>
-                <div class="social">
-                    <a href="#" class="fab fa-facebook"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-skype"></a>
-                    <a href="#" class="fab fa-github"></a>
-                </div>
-
-            </section>
-        </main>
-        <footer>
-            <p>Copyright 2023. Made by Il_Pa</p>
-        </footer>
-    </body>
 </html>
-
