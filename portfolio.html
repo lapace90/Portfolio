@@ -65,8 +65,8 @@
             </select>
         </section>
         <section class="container-fluid">
-            <div class="row">
-                <div class="mt-5 pb-5">
+            <div class="row pb-5">
+                <div class="mt-5 ">
                     <div class="col-md-6">
                         <h1 id="hello" class="text-start mt-5">Hi,<br> I'm Ilaria!</h1>
                         <div class="col-md ">
@@ -75,11 +75,12 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row">
-                    <div id="aboutme" class="col-md-6 align-self-center">
-                        <div class="bio m-4">
+                <div class="row justify-content-center">
+                    <div id="aboutme" class="col-12 col-md-8">
+                        <div class="bio">
                             <h2 class="p-5">About me:</h2>
-                            <p id="siteContent">Hello, I'm Ilaria Pace, a passionate web developer based in French
+                            <p id="siteContent" class="bio">Hello, I'm Ilaria Pace, a passionate web developer based in
+                                French
                                 Riviera,
                                 with a
                                 deep interest in creating user-friendly and visually appealing websites.
@@ -94,8 +95,9 @@
                             <span><strong>Let's collaborate and bring your digital solutions to life!</strong></span>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-5">
-                        <img id="propic" alt="Ilaria Pace" src="./img/propic.jpg" class="img-fluid mt-5">
+                    <div class="col-12 col-md-4">
+                        <img id="propic" alt="Ilaria Pace" src="./img/propic.jpg" class="img-fluid"
+                            style="min-width: 11rem;">
                         <div class="cv text-center">
                             <h3>Resume</h3>
                             <a href="./img/CV stage.pdf" download="resumeIlaria">Download</a>
@@ -150,12 +152,15 @@
                 <div class="col">
                     <h2>Contacts</h2>
                     <p class="p-5">For any question or request of collaboration feel free to send me a message...</p>
-                    <form class="message">
+                    <form class="message" style="min-width: 75%;">
                         <label id="name">Name</label>
                         <input type="text" name="name" required>
                         <br>
                         <label id="email">Email</label>
                         <input type="email" name="email" required>
+                        <br>
+                        <label id="objetc">Object</label>
+                        <input type="text" name="object" required>
                         <br>
                         <label>Message</label>
                         <textarea minlength="5" maxlength="250" rows="7" cols="35" required></textarea>
@@ -163,11 +168,13 @@
                         <button type="submit" class="submit">Submit Your Message</button>
                     </form>
                     <p class="p-5">...or contact me on my social medias!</p>
-                    <div class="social">
-                        <a href="https://www.facebook.com/superlila90/" class="fab fa-facebook p-3"></a>
-                        <a href="www.linkedin.com/in/ilaria-pace-2a3b3b2aa" class="fab fa-linkedin p-3"></a>
-                        <a href="https://www.instagram.com/superlila90/" class="fab fa-instagram p-3"></a>
-                        <a href="https://github.com/lapace90" class="fab fa-github p-3"></a>
+                    <div class="social container">
+                        <div class="row justify-content-center">
+                            <a href="https://www.facebook.com/superlila90/" class="fab fa-facebook px-4"></a>
+                            <a href="www.linkedin.com/in/ilaria-pace-2a3b3b2aa" class="fab fa-linkedin px-4"></a>
+                            <a href="https://www.instagram.com/superlila90/" class="fab fa-instagram px-4"></a>
+                            <a href="https://github.com/lapace90" class="fab fa-github px-4"></a>
+                        </div>
                     </div>
                 </div>
             </div>

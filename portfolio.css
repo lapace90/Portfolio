@@ -60,14 +60,8 @@ main {
 #propic {
   width: 11rem;
   border-radius: 10px;
-  align-self: center;
   box-shadow: 5px 5px 5px rgb(211, 77, 0);
   margin: 4rem auto;
-}
-
-.me {
-  padding: 3rem;
-  display: block;
 }
 
 .bio {
@@ -200,6 +194,9 @@ label {
   font-weight: bold;
   border: none;
 }
+.submit:hover {
+  opacity: 0.7;
+}
 
 #contacts {
   font-size: 1.5rem;
@@ -208,22 +205,20 @@ label {
 .social {
   display: inline-block;
   background-color: whitesmoke;
-  padding: 5px;
   margin: auto;
   box-shadow: 5px 5px 5px rgb(211, 77, 0);
   border-radius: 4px;
 }
 
 .fab {
-  padding: 10px;
+  padding: 1rem;
   font-size: 2.5rem;
-  width: 20px;
-  text-align: center;
+  width: 1.5rem;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 2px 2px;
 }
 
-.fa:hover {
+.fab:hover {
   opacity: 0.7;
 }
   
@@ -255,14 +250,14 @@ footer {
 .lang {
     float: right;
 }
-#lang {
-background-color: rgb(211, 77, 0);
-padding: .4rem;
-border-radius: 4px;
-font-family: Unbounded;
-border: #f0f0f0;
-color: white;
 
+#lang {
+  background-color: rgb(211, 77, 0);
+  padding: .4rem;
+  border-radius: 4px;
+  font-family: Unbounded;
+  border: #f0f0f0;
+  color: white;
 }
 
 @media screen and (max-width: 750px)  {
@@ -272,6 +267,15 @@ color: white;
     text-shadow: 2px 2px 3px rgb(211, 77, 0);
     color: white;
     
+  }
+  #aboutme {
+    margin: auto;
+    width: 90%;
+  }
+
+  #propic {
+    
+    margin: 2rem auto;
   }
   .fox {
     min-width: 22rem;
