@@ -1,0 +1,4 @@
+Oui tu peux sans problème mais tu vas devoir écrire le code des 2 manières : 
+- dans ton html tu écris le code pour les cards et le code pour le carousel
+- tu ajoutes les classes d-none et d-lg-block (par exemple si tu veux un block) sur la div qui entoure tes cards : ca permet de ne l'afficher qu'à partir de lg et avant elle est en display none donc elle ne s'affiche pas 
+- tu ajoutes la classe d-lg-none à ton carousel : elle s'affiche jusqu'à lg ou elle passe en display none
