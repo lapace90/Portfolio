@@ -59,7 +59,7 @@
         </nav>
     </header>
     <main>
-        <section class="lang mt-5 p-5">
+        <!-- <section class="lang mt-5 p-5">
             <label for="lang"></label>
             <select name="lang" id="lang" onchange="changeLanguage(this.value)">
                 <option value="eng" class="eng">English</option>
@@ -69,7 +69,22 @@
                 <option value="deu" class="deu">Deutsch</option>
                 <option value="rus" class="rus">Русско</option>
             </select>
+        </section> -->
+        
+        <section class="lang mt-5 ">
+            <div class="dropdown p-5">
+                <i class="fa fa-globe dropdown-toggle m-5" style="color: chocolate; max-width: 0.8rem;" onclick="toggleDropdown()"></i>
+                <ul class="dropdown-menu" id="lang-menu">
+                    <li><a href="#" onclick="changeLanguage('eng')">English</a></li>
+                    <li><a href="#" onclick="changeLanguage('ita')">Italiano</a></li>
+                    <li><a href="#" onclick="changeLanguage('fra')">Français</a></li>
+                    <li><a href="#" onclick="changeLanguage('esp')">Español</a></li>
+                    <li><a href="#" onclick="changeLanguage('deu')">Deutsch</a></li>
+                    <li><a href="#" onclick="changeLanguage('rus')">Русско</a></li>
+                </ul>
+            </div>
         </section>
+        
 
         <section class="container-fluid">
             <div class="row pb-5">
@@ -109,7 +124,7 @@
         <section id="skills" class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h2 id="skills-title" class="p-5">Skills</h2>
+                    <h2 id="skills-title" class="p-5"></h2>
                     <p id="skills-text1"></p>
                     <p id="skills-text2" class="pb-3"></p>
                     <div class="devicon">
@@ -136,32 +151,33 @@
         <section id="projects" class="container-fluid">
             <hr>
             <div class="row">
-                <div class="col">
-                    <h2 id="projects-title" class="p-5">Projects</h2>
+                <div class="mb-5">
+                    <h2 id="projects-title" class="p-5"></h2>
                     <div class="demo">
-                        <img src="./img/pulse.png" alt="music club's site">
-                        <img src="./img/tonight.png" alt="site for tell you what to do in the evening">
-                        <img src="./img/bolt.png" alt="DIY shop's site">
+                        <img src="./img/pulse.png" alt="music club's site" class="col-4">
+                        <img src="./img/tonight.png" alt="site for tell you what to do in the evening" class="col-4">
+                        <img src="./img/bolt.png" alt="DIY shop's site" class="col-4">
                     </div>
                 </div>
             </div>
         </section>
+        <hr>
         <section id="contacts" class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h2 id="contacts-title">Contacts</h2>
+                    <h2 id="contacts-title"></h2>
                     <p class="p-5" id="contacts-text1"></p>
                     <form class="message" style="min-width: 75%;">
-                        <label id="name">Name</label>
+                        <label id="name"></label>
                         <input type="text" name="name" required>
                         <br>
-                        <label id="email">Email</label>
+                        <label id="email"></label>
                         <input type="email" name="email" required>
                         <br>
-                        <label id="object">Object</label>
+                        <label id="object"></label>
                         <input type="text" name="object" required>
                         <br>
-                        <label id="message">Message</label>
+                        <label id="message"></label>
                         <textarea minlength="5" maxlength="250" rows="7" cols="35" required></textarea>
                         <br>
                         <button id="submit" type="submit" class="submit">Submit Your Message</button>

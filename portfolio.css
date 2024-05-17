@@ -18,9 +18,8 @@ body {
   height: 4rem;
 }
 
-
 #btn {
-  border-radius: 20%;
+  border-radius: 10px;
   border: 2px solid gray;
   box-shadow: 3px 3px 3px rgb(211, 77, 0);
 }
@@ -47,6 +46,46 @@ body {
 
 main {
   position: relative;
+}
+
+/* Stile per i link nel menu */
+#navi .nav-link {
+  transition: opacity 0.3s; /* Effetto di transizione */
+}
+
+/* Aggiungiamo stili per l'icona del menu */
+.navbar-toggler {
+  background-color: transparent; /* Sfondo trasparente */
+  border: none; /* Rimuoviamo il bordo */
+}
+
+.dropdown-toggle:hover {
+opacity: 0.7;
+
+}
+/* Stili per il menu dropdown */
+.dropdown-toggle::after {
+  content: none; /* Rimuoviamo il contenuto dopo il pulsante dropdown */
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa; /* Colore di sfondo */
+  border: none; /* Rimuoviamo il bordo */
+  border-radius: 10px; /* Bordi arrotondati */
+  padding: 10px; /* Spaziatura interna */
+  box-shadow: 3px 3px 3px rgb(211, 77, 0);
+}
+
+.dropdown-menu a {
+  color: #343a40; /* Colore del testo */
+  font-family: 'Unbounded'; /* Font family */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Ombra del testo */
+  transition: opacity 0.3s; /* Effetto di transizione */
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  opacity: 0.7; /* Riduzione dell'opacità al passaggio del mouse */
 }
 
  #hello {

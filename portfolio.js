@@ -1,32 +1,30 @@
-
-
-// Funzione per mostrare/nascondere il menu dropdown
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+// Funzione per aprire/chidere il menu delle lingue
+function toggleDropdown() {
+    var dropdownMenu = document.getElementById("lang-menu");
+    dropdownMenu.classList.toggle("show");
+    // Chiudere il menu dropdown se l'utente clicca fuori di esso
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-toggle')) {
+        var dropdownMenu = document.getElementById("lang-menu");
+        if (dropdownMenu.classList.contains('show')) {
+            dropdownMenu.classList.remove('show');
+            }
+        }
+    }
 }
-document.addEventListener('DOMContentLoaded', function () {
-  var navbarCollapse = document.getElementById('navbarNav');
-  var navLinks = navbarCollapse.querySelectorAll('.nav-link');
-  var bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
 
-  navLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-          bsCollapse.hide();
-      });
-  });
-});
-//Chiudere il menu dropdown se l'utente clicca fuori di esso
+// Chiudere il menu dropdown se l'utente clicca fuori di esso
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-          }
-      }
-  }
+    if (!event.target.matches('.dropdown-toggle')) {
+        var dropdownNav = document.getElementById("navbarNav");
+        if (dropdownNav.classList.contains('show')) {
+            dropdownNav.classList.remove('show');
+        }
+    }
 }
+
+
+
 // Oggetto per le traduzioni
 let language = {
   eng: {
@@ -181,18 +179,21 @@ let language = {
           window.location.hash = lang;
       }
 
-      // Carica la lingua corrente in base all'hash
       window.onload = function() {
-          let hash = window.location.hash.substring(1);
-          if (hash) {
-              document.getElementById('lang').value = hash;
-              changeLanguage(hash);
-          }
-      };
-
-      $(document).ready(function() {
-        // Aggiungi le icone delle bandiere come sfondo alle opzioni di lingua
-        $('#lang option').each(function() {
-            $(this).css('background-image', 'url(' + $(this).data('icon') + ')');
-        });
-    });
+        // Imposta la lingua predefinita su italiano
+        changeLanguage('eng');
+    
+        // Riempire i testi con la lingua predefinita
+        fillTexts('eng');
+    
+        // Carica la lingua corrente in base all'hash
+        let hash = window.location.hash.substring(1);
+        if (hash) {
+            document.getElementById('lang-menu').value = hash;
+            changeLanguage(hash);
+        }
+    };
+    
+  
+ 
+    
